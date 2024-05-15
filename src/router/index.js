@@ -1,4 +1,4 @@
-// src/router/index.js
+src/router/index.js
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import SongList from '@/components/SongList';
