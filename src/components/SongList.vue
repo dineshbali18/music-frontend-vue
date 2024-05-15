@@ -1,7 +1,7 @@
 <template>
   <div>
     <NavBar />
-    <h1>Home{{songs}}</h1>
+    <h3>Top Trending</h3>
     <div class="song-container">
       <div v-for="song in songs" :key="song.id" class="song-card">
         <img :src="song.image" class="song-image" alt="Song Image">
@@ -28,7 +28,13 @@ export default {
   },
   data() {
     return {
-      songs: [],
+      songs: [
+        {
+          id: 1,
+          name: "guntur karam",
+          image: "https://gallery.123telugu.com/content/images/guntur-fea.jpg"
+        }
+      ],
     };
   },
   created() {
