@@ -3,6 +3,7 @@
   <nav>
     <router-link class="navele" to="/">Home</router-link>
     <router-link class="navele" to="/add">Add</router-link>
+    <router-view></router-view>
   </nav>
 </template>
 

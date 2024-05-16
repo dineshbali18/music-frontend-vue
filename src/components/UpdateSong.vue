@@ -14,7 +14,7 @@
 import axios from 'axios';
 
 export default {
-  name: 'Update',
+  name: 'UpdateSong',
   data() {
     return {
       name: '',
@@ -40,6 +40,7 @@ export default {
         }
       })
       .then(response => {
+        console.log(response)
         this.$router.push('/');
       })
       .catch(error => {

@@ -1,6 +1,7 @@
 <template>
+<div>
+<NavBar />
   <div>
-    <NavBar />
     <h3>Top Trending</h3>
     <div class="song-container">
       <div v-for="song in songs" :key="song.id" class="song-card">
@@ -15,6 +16,7 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>
