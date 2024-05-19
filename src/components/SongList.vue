@@ -9,7 +9,7 @@
         <div class="song-details">
           <h2>{{ song.name }}</h2>
           <div class="song-actions">
-            <router-link :to="'/v1/update/music/' + song.id" class="btn btn-primary">Update</router-link>
+            <router-link :to="'/update/' + song.id" class="btn btn-primary">Update</router-link>
             <button @click="confirmDelete(song.id)" class="btn btn-danger">Delete</button>
           </div>
         </div>
