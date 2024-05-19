@@ -1,10 +1,13 @@
 <!-- src/components/NavBar.vue -->
 <template>
+<div>
   <nav>
     <router-link class="navele" to="/">Home</router-link>
     <router-link class="navele" to="/add">Add</router-link>
-    <router-view></router-view>
+    <!-- <router-link class="navele" to="/update">Add</router-link> -->
   </nav>
+  <router-view></router-view>
+</div>
 </template>
 
 <script>

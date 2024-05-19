@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- <NavBar/> -->
     <h1>Add Song</h1>
     <form @submit.prevent="addSong">
       <input v-model="name" placeholder="Name" required />

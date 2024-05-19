@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- <NavBar/> -->
     <h1>Update Song</h1>
     <form @submit.prevent="updateSong">
       <input v-model="name" placeholder="Name" required />
@@ -12,9 +13,13 @@
 
 <script>
 import axios from 'axios';
+// import NavBar from '@/components/NavBar.vue'
 
 export default {
   name: 'UpdateSong',
+  components:{
+    // NavBar
+  },
   data() {
     return {
       name: '',
