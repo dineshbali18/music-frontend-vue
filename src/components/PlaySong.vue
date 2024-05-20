@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h6>{{ audioData }}</h6>
         <audio controls :src="blobData" id="audioPlayer"></audio>
     </div>
 </template>
