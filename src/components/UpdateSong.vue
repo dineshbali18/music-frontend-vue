@@ -3,9 +3,9 @@
     <!-- <NavBar/> -->
     <h1>Update Song</h1>
     <form @submit.prevent="updateSong">
-      <input v-model="name" placeholder="Name" required />
-      <input v-model="image" placeholder="Image URL" required />
-      <input type="file" @change="onFileChange" required />
+      <input v-model="name" placeholder="Name"  />
+      <input v-model="image" placeholder="Image URL"  />
+      <input type="file" @change="onFileChange"  />
       <button type="submit">Update</button>
     </form>
   </div>

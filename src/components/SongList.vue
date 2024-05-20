@@ -2,18 +2,24 @@
 <div>
 <!-- <NavBar /> -->
   <div>
+    <div>
     <h3>Top Trending</h3>
     <div class="song-container">
       <div v-for="song in songs" :key="song.id" class="song-card">
         <img :src="song.image" class="song-image" alt="Song Image">
         <div class="song-details">
           <h2>{{ song.name }}</h2>
+          <PlaySong :audioData="song.file"/>
           <div class="song-actions">
             <router-link :to="'/update/' + song.id" class="btn btn-primary">Update</router-link>
             <button @click="confirmDelete(song.id)" class="btn btn-danger">Delete</button>
           </div>
         </div>
       </div>
+    </div>
+    </div>
+    <div>
+      
     </div>
   </div>
 </div>
@@ -22,11 +28,13 @@
 <script>
 // import NavBar from '@/components/NavBar.vue';
 import axios from 'axios';
+import PlaySong from './PlaySong.vue';
 
 export default {
   name: 'SongList',
   components: {
     // NavBar,
+    PlaySong
   },
   data() {
     return {
