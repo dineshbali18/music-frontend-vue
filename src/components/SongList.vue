@@ -38,13 +38,7 @@ export default {
   },
   data() {
     return {
-      songs: [
-        {
-          id: 1,
-          name: "guntur karam",
-          image: "https://gallery.123telugu.com/content/images/guntur-fea.jpg"
-        }
-      ],
+      songs: [],
     };
   },
   created() {
